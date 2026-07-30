@@ -22,7 +22,6 @@ export function SiteFooter() {
             <li><Link to="/" className="hover:text-primary">Home</Link></li>
             <li><Link to="/coffee" className="hover:text-primary">Coffee</Link></li>
             <li><Link to="/about" className="hover:text-primary">About</Link></li>
-            <li><Link to="/pharma" className="hover:text-primary">Pharma</Link></li>
             <li><Link to="/contact" className="hover:text-primary">Contact</Link></li>
           </ul>
         </div>

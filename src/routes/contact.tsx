@@ -6,7 +6,7 @@ export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "Contact — Kebre Ilike PLC" },
-      { name: "description", content: "Contact Kebre Ilike PLC for coffee export inquiries and pharmaceutical supply partnerships." },
+      { name: "description", content: "Contact Kebre Ilike PLC for coffee export inquiries and partnership opportunities." },
       { property: "og:title", content: "Contact — Kebre Ilike PLC" },
       { property: "og:description", content: "Get in touch with our team in Ethiopia." },
     ],
@@ -23,8 +23,8 @@ function ContactPage() {
           <p className="text-sm font-semibold uppercase tracking-widest text-primary">Contact</p>
           <h1 className="mt-2 font-display text-4xl font-bold sm:text-5xl">Let&apos;s work together</h1>
           <p className="mt-4 text-muted-foreground">
-            Whether you are interested in our specialty coffee or pharmaceutical supplies, our
-            team is ready to assist you.
+            Interested in our specialty Ethiopian coffee? Our team is ready to discuss
+            your sourcing needs, volumes, and origin preferences.
           </p>
           <div className="mt-10 space-y-5 text-sm">
             <div className="flex items-start gap-3">
@@ -69,8 +69,8 @@ function ContactPage() {
               </div>
               <Field label="Email" name="email" type="email" required />
               <div className="grid gap-4 sm:grid-cols-2">
-                <Select label="Interest" name="interest" options={["Coffee Export", "Pharma Import", "Partnership", "Other"]} />
-                <Select label="Company" name="company" options={["Roaster", "Importer", "Hospital", "Pharmacy", "Other"]} />
+                <Select label="Interest" name="interest" options={["Coffee Export", "Partnership", "Other"]} />
+                <Select label="Company" name="company" options={["Roaster", "Importer", "Trader", "Other"]} />
               </div>
               <div>
                 <label className="text-sm font-medium">Message</label>
@@ -78,7 +78,7 @@ function ContactPage() {
                   name="message"
                   rows={4}
                   className="mt-1.5 w-full rounded-lg border border-input bg-background px-3 py-2 text-sm outline-none ring-primary focus:ring-2"
-                  placeholder="Tell us about your needs..."
+                  placeholder="Tell us about your coffee sourcing needs..."
                 />
               </div>
               <button

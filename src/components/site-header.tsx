@@ -17,7 +17,7 @@ export function SiteHeader() {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link to="/" className="flex items-center gap-2">
           <span className="flex h-9 w-9 items-center justify-center rounded-full bg-primary text-primary-foreground font-bold">
-            T
+            K
           </span>
           <span className="text-lg font-bold tracking-tight">Kebre Ilike PLC</span>
         </Link>
@@ -54,7 +54,7 @@ export function SiteHeader() {
         <button
           onClick={() => setOpen((v) => !v)}
           className="md:hidden inline-flex h-9 w-9 items-center justify-center rounded-md border border-border"
-          aria-label="Toggle menu"
+          aria-label="Koggle menu"
         >
           <span className="text-lg">≡</span>
         </button>

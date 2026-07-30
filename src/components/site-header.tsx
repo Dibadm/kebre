@@ -53,7 +53,7 @@ export function SiteHeader() {
         <button
           onClick={() => setOpen((v) => !v)}
           className="md:hidden inline-flex h-9 w-9 items-center justify-center rounded-md border border-border"
-          aria-label="Koggle menu"
+          aria-label="Toggle menu"
         >
           <span className="text-lg">≡</span>
         </button>

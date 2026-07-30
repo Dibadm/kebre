@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Link } from "@tanstack/react-router";
-import { Coffee, Pill, Globe, Shield, ArrowRight } from "lucide-react";
+import { Coffee, Globe, Shield, ArrowRight } from "lucide-react";
 import heroImg from "@/assets/hero-dubai.jpg";
 
 export const Route = createFileRoute("/")({
@@ -10,12 +10,12 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Kebre Ilike PLC exports specialty Ethiopian coffee and imports pharmaceutical and medical supplies. Based in Jimma, Ethiopia.",
+          "Kebre Ilike PLC exports specialty Ethiopian coffee from the Yayo Biosphere Reserve and Jimma region. Fully traceable, sustainably grown, and expertly processed.",
       },
       { property: "og:title", content: "Kebre Ilike PLC — Ethiopian Coffee Export & Global Trade" },
       {
         property: "og:description",
-        content: "Specialty coffee exporter and pharmaceutical importer based in southwestern Ethiopia.",
+        content: "Specialty coffee exporter based in southwestern Ethiopia.",
       },
     ],
   }),
@@ -45,10 +45,24 @@ function Index() {
               <span className="text-primary">Rooted in Quality</span>
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-base text-white/85 sm:text-lg">
-              Kebre Ilike PLC is a dual-focus enterprise exporting specialty coffee from the
-              UNESCO-protected Yayo Biosphere Reserve and importing essential pharmaceutical
-              supplies to Ethiopia.
+              Kebre Ilike PLC exports specialty coffee from the UNESCO-protected Yayo Biosphere
+              Reserve and Jimma region. Direct farm-to-cup traceability, sustainable agroforestry,
+              and fair pricing for roasters worldwide.
             </p>
+            <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+              <Link
+                to="/coffee"
+                className="inline-flex items-center gap-2 rounded-md bg-white px-6 py-3 text-sm font-semibold text-primary shadow-[var(--shadow-elegant)] transition-transform hover:scale-[1.02]"
+              >
+                Explore Our Coffee <ArrowRight className="h-4 w-4" />
+              </Link>
+              <Link
+                to="/about"
+                className="inline-flex items-center gap-2 rounded-md border border-white/30 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur transition-colors hover:bg-white/20"
+              >
+                Our Story
+              </Link>
+            </div>
           </div>
 
           {/* Stats */}
@@ -67,67 +81,7 @@ function Index() {
         </div>
       </section>
 
-      {/* About intro */}
-      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl text-center">
-          <h2 className="font-display text-3xl font-bold sm:text-5xl">A Legacy of Quality & Trust</h2>
-          <p className="mt-6 text-lg text-muted-foreground">
-            Operating from southwestern Ethiopia, Kebre Ilike PLC bridges the gap between Ethiopian
-            agricultural excellence and global markets. We specialize in the export of premium,
-            traceable coffee from the Jimma region and the import of high-quality pharmaceutical
-            and medical supplies.
-          </p>
-        </div>
-      </section>
-
-      {/* Two business arms */}
-      <section className="bg-[oklch(0.97_0.01_150)] py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-14 text-center">
-            <h2 className="font-display text-3xl font-bold sm:text-5xl">What We Do</h2>
-            <p className="mx-auto mt-3 max-w-2xl text-muted-foreground">
-              Two complementary business arms serving both local and international markets.
-            </p>
-          </div>
-          <div className="grid gap-8 md:grid-cols-2">
-            <div className="rounded-2xl bg-card p-8 shadow-[var(--shadow-card)]">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
-                <Coffee className="h-6 w-6" />
-              </div>
-              <h3 className="mt-5 text-xl font-semibold">Specialty Coffee Export</h3>
-              <p className="mt-2 text-sm text-muted-foreground">
-                We source, process, and export high-quality Arabica coffee from the Yayo Biosphere
-                Reserve and Jimma region. Our coffees are shade-grown, fully traceable, and available
-                as washed and natural micro-lots.
-              </p>
-              <Link
-                to="/coffee"
-                className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline"
-              >
-                Learn more <ArrowRight className="h-4 w-4" />
-              </Link>
-            </div>
-            <div className="rounded-2xl bg-card p-8 shadow-[var(--shadow-card)]">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
-                <Pill className="h-6 w-6" />
-              </div>
-              <h3 className="mt-5 text-xl font-semibold">Pharma & Medical Import</h3>
-              <p className="mt-2 text-sm text-muted-foreground">
-                We import and distribute pharmaceutical products and medical consumables, ensuring
-                reliable supply chains, regulatory compliance, and timely delivery across Ethiopia.
-              </p>
-              <Link
-                to="/pharma"
-                className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline"
-              >
-                Learn more <ArrowRight className="h-4 w-4" />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Why choose us */}
+      {/* Value props */}
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="mb-14 text-center">
           <h2 className="font-display text-3xl font-bold sm:text-5xl">Why Kebre Ilike</h2>
@@ -161,6 +115,31 @@ function Index() {
               <p className="mt-2 text-sm text-muted-foreground">{d}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* How it works */}
+      <section className="bg-[oklch(0.97_0.01_150)] py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-14 text-center">
+            <h2 className="font-display text-3xl font-bold sm:text-5xl">How We Work</h2>
+            <p className="mx-auto mt-3 max-w-2xl text-muted-foreground">
+              From the highlands of southwestern Ethiopia to your roastery.
+            </p>
+          </div>
+          <div className="grid gap-8 md:grid-cols-3">
+            {[
+              { n: "01", t: "Source", d: "We partner directly with farmers and washing stations in the Yayo Biosphere Reserve and Jimma region." },
+              { n: "02", t: "Process", d: "Using controlled washed and natural micro-lot processing with dedicated drying facilities to ensure quality." },
+              { n: "03", t: "Export", d: "We handle logistics, customs compliance, and port clearance, delivering to Europe, North America, and Asia." },
+            ].map((s) => (
+              <div key={s.n} className="rounded-2xl border border-border bg-card p-8 shadow-[var(--shadow-card)]">
+                <div className="font-display text-4xl font-bold text-primary">{s.n}</div>
+                <h3 className="mt-4 text-lg font-semibold">{s.t}</h3>
+                <p className="mt-2 text-sm text-muted-foreground">{s.d}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

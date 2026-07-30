@@ -6,9 +6,9 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "About — Kebre Ilike PLC" },
-      { name: "description", content: "Kebre Ilike PLC is an Ethiopian enterprise exporting specialty coffee and importing pharmaceutical supplies." },
+      { name: "description", content: "Kebre Ilike PLC is an Ethiopian enterprise exporting specialty coffee from the Yayo Biosphere Reserve and Jimma region." },
       { property: "og:title", content: "About — Kebre Ilike PLC" },
-      { property: "og:description", content: "Learn about our origins in Jimma, our commitment to sustainable coffee farming, and our dual business model." },
+      { property: "og:description", content: "Learn about our origins in Jimma, our commitment to sustainable coffee farming, and our direct trade model." },
     ],
   }),
   component: AboutPage,
@@ -31,9 +31,9 @@ function AboutPage() {
           </p>
           <p className="mt-4 text-muted-foreground">
             Our primary focus is the export of specialty-grade Arabica coffee from the Jimma region
-            and the UNESCO-protected Yayo Biosphere Reserve. Alongside this, we import and distribute
-            pharmaceutical and medical supplies, ensuring Ethiopia has access to essential healthcare
-            products.
+            and the UNESCO-protected Yayo Biosphere Reserve. We maintain direct farm-to-cup
+            traceability, sustainable agroforestry practices, and fair pricing for our producer
+            partners.
           </p>
           <ul className="mt-8 space-y-3">
             {[

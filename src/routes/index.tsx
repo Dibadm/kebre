@@ -155,7 +155,7 @@ function Index() {
             </h2>
             <p className="mt-4 text-white/90">
               Whether you are a specialty roaster looking for traceable Ethiopian coffee or a
-              healthcare partner seeking reliable pharmaceutical supply, we are ready to work with you.
+              trading partner seeking reliable export logistics, we are ready to work with you.
             </p>
             <Link
               to="/contact"

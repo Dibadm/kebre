@@ -7,7 +7,7 @@ export function SiteFooter() {
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-4 lg:px-8">
         <div className="lg:col-span-2">
           <div className="flex items-center gap-2">
-            <span className="flex h-9 w-9 items-center justify-center rounded-full bg-primary font-bold">T</span>
+            <span className="flex h-9 w-9 items-center justify-center rounded-full bg-primary font-bold">K</span>
             <span className="text-lg font-bold">Kebre Ilike PLC</span>
           </div>
           <p className="mt-4 max-w-md text-sm text-white/70">
